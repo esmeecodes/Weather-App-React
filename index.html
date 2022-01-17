@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <!DOCTYPE html>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>🌏 How's the weather?</title>
+    <script
+      src="https://kit.fontawesome.com/1bf3caee67.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weatherapp"></div>
+      <h1>How's the weather?</h1>
+
+      <div class="row1">
+        <div class="col-sm-5">
+          <form id="searchform-city">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search your favorite place"
+                id="input-city"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div id="map"></div>
+        </div>
+        <div class="col-6">
+          <h2 class="card-title">
+            The weather for <br /><span id="city">Amsterdam</span>
+          </h2>
+          <span id="today"> </span><br />
+          <p>
+            <span id="accentbig"
+              ><span id="degrees"></span>&deg<span id ="celcius">C
+              </span> <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon" class="icon"></span
+            >
+            <ul>
+            <li class="weatherdescription">test </li>
+            <li>Windspeed: <span id="windspeed"> </span>m/h</li>
+           <li>Humidity: <span id="humidity"> </span>%</li> 
+            </ul>
+          </p>
+        </div>
+      </div>
+       <h3 class="forecast5">
+            Forecast
+          </h2>
+    <div class="5dayforecast" id="forecast">
+    </div>
+    </div>
+    
+      <div class="row">
+        <div class=col-12>
+    
+  <p class="footer">This project was coded by Esmée Zootjes and is open-sourced on <a href="https://github.com/esmeecodes/WTW-WhatsTheWeather" alt="Github link">GitHub</a> and hosted on <a href="https://hardcore-heyrovsky-506709.netlify.app/" alt="Netlify link"> Netlify</a>.</p>
+        </div>
+      </div>
+    <script src="src/index.js"></script>
+   
+
+  </body>
+</html>
